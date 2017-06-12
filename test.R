@@ -17,6 +17,7 @@ apply(Fdata, 2, mean) # Inconsistent with p.1
 apply(Fdata, 2, sd) # Inconsistent with p.1
 
 # Test
+library(coin)
 wilcoxsign_test(Fdata$UpTowards ~ Fdata$UpAway, distribution = "exact",
                 alternative = "greater")
 wilcoxsign_test(Fdata$InvTowards ~ Fdata$InvAway, distribution = "exact",
