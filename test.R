@@ -7,7 +7,7 @@ Fdata <- Fetus[8:11]
 colnames(Fdata) <- c("UpTowards", "UpAway", "InvTowards", "InvAway") # Rename columns
 # Age
 apply(Fetus[2], 2, min) # 231, Consistent with p.e1
-apply(Fetus[2], 2, max) # 254, Consistent with p.e1
+apply(Fetus[2], 2, max) # 252, Consistent with p.e1
 apply(Fetus[2], 2, mean) # 240.6154, Consistent with p.e1
 # Maternal Tissue Thickness 
 apply(Fetus[4], 2, mean) # 27.46667,Consistent with p.e1
